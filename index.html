@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Northstar Commercial Bank — Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="mark">N</span><span>Northstar Commercial Bank</span><small>DEMO • NOT A REAL BANK</small></div>
+    <nav><a href="#accounts">Accounts</a><a href="#business">Business</a><a href="#security">Security</a><button id="loginBtn" class="outline">Sign in</button></nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">Commercial banking, simplified</span>
+        <h1>Built for businesses that are going places.</h1>
+        <p>Explore a polished American-style commercial banking interface with accounts, payments, treasury tools and a secure demo dashboard.</p>
+        <div class="actions"><button id="openBtn" class="primary">Open an account</button><button id="demoBtn" class="secondary">View demo dashboard</button></div>
+        <p class="notice">This is a front-end demonstration. It does not process money, authenticate users, or collect banking credentials.</p>
+      </div>
+      <div class="hero-card"><div class="card-top"><span>Business Checking</span><span>••• 4821</span></div><div class="balance">$248,630.42</div><div class="card-bottom"><span>Available balance</span><span>Northstar Demo</span></div></div>
+    </section>
+
+    <section id="accounts" class="section"><div class="section-head"><span class="eyebrow">One platform</span><h2>Everything your business needs</h2></div>
+      <div class="grid three"><article><div class="icon">$</div><h3>Business checking</h3><p>Manage operating cash with a clean, intuitive account experience.</p></article><article><div class="icon">↗</div><h3>Payments</h3><p>Review transfers, scheduled payments and transaction activity in one place.</p></article><article><div class="icon">▣</div><h3>Treasury tools</h3><p>Get a high-level view of liquidity, cash flow and account balances.</p></article></div>
+    </section>
+
+    <section id="business" class="section split"><div><span class="eyebrow">Demo dashboard</span><h2>See the banking experience</h2><p>Use the demo controls to explore account balances and recent transactions. All values are fictional and stored only in your browser session.</p><button id="dashboardBtn" class="primary">Launch dashboard</button></div><div class="stats"><div><span>Total deposits</span><strong>$1.84M</strong><small>+8.4% this quarter</small></div><div><span>Operating cash</span><strong>$428K</strong><small>Across 4 demo accounts</small></div><div><span>Payments</span><strong>126</strong><small>This month</small></div></div></section>
+
+    <section id="security" class="section security"><span class="eyebrow">Security first</span><h2>Designed as a safe prototype</h2><div class="security-list"><div><strong>🔒 No credential collection</strong><p>The sign-in form never sends passwords anywhere.</p></div><div><strong>🛡️ Fictional institution</strong><p>Northstar Commercial Bank is a fictional demo brand.</p></div><div><strong>◎ No financial transactions</strong><p>Buttons and balances are simulation-only.</p></div></div></section>
+  </main>
+
+  <footer><div><strong>Northstar Commercial Bank</strong><p>Fictional interface for development and design demonstration.</p></div><div><span>Member FDIC — DEMO ONLY</span><span>Equal Housing Lender — DEMO ONLY</span></div></footer>
+
+  <div id="loginModal" class="modal hidden"><div class="modal-box"><button class="close" data-close>×</button><span class="eyebrow">Demo sign in</span><h2>Access your demo account</h2><p class="notice">Do not enter real banking information.</p><form id="loginForm"><label>Email<input type="email" required placeholder="demo@example.com"></label><label>Password<input type="password" required placeholder="Demo password"></label><button class="primary" type="submit">Continue to demo</button></form></div></div>
+
+  <div id="dashboardModal" class="modal hidden"><div class="modal-box dashboard"><button class="close" data-close>×</button><span class="eyebrow">Demo dashboard</span><h2>Good morning, Alex</h2><div class="dashboard-balance"><span>Total available</span><strong>$248,630.42</strong></div><h3>Recent activity</h3><div class="transactions"><div><span>ACH Deposit · Demo Client</span><strong>+$18,500.00</strong></div><div><span>Office Services</span><strong>−$2,840.00</strong></div><div><span>Payroll · Demo Corp</span><strong>−$12,620.00</strong></div><div><span>Interest credit</span><strong>+$142.35</strong></div></div></div></div>
+  <script src="app.js"></script>
+</body>
+</html>
